@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+.container {
+    padding: 60px 0;
+}
+.row {
+    width: 1000px;
+    margin-left: calc(50% - 500px);
+    background-color: yellow;
+}
+.row-short {
+    width: 600px;
+    margin-left: calc(50% - 300px);
+    background-color: orange;
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+.left-column {
+    width: 50%;
+    background-color: aqua;
+}
+.right-column {
+    width: 40%;
+    background-color: aqua;
+}
