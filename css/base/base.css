@@ -1,0 +1,20 @@
+:root {/*paima visą html failą, matosi ir visuose kiuose css*/
+    --pagrindinė-spalva: #03a9f4;/*galim bet kada išsikviesti*/
+    --antrinė-spalva: #ea1d62;
+}
+body,
+body * { /*taiko visiems body elementams*/
+    margin: 0; /*nuima naršyklės taikomą margin*/
+    padding: 0; /*jei naršyklė pradėtų taikyti, nors dabar ir netaiko*/
+    vertical-align: top; /*lentelėse reiklainga*/
+    box-sizing: border-box; /*pradeda *iūrėti ne į turinio, o į elemento apimtį*/
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri; /*galima dėti ir į *, arba atskirai, jei norima tik paveldimumo, o ne kad kiekvienam individualiai taikytų*/
+}
+.bg-primary {
+    background-color: var(--pagrindinė-spalva);/*išsikviečiam variable*/
+}
+.bg-secondary {
+    background-color: var(--pagrindinė-spalva);
+}

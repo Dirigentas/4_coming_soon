@@ -5,15 +5,63 @@
     <meta charset="UTF-8">
     <meta http-equiv-"X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming soon</title> 
+    <title>Coming soon</title>
+    <!--base style-->
+    <link rel="stylesheet" href="./css/base/base.css">
+    <link rel="stylesheet" href="./css/base/layout.css">
+    <!--3rd party-->
+    <link rel="stylesheet" href="./css/3rd-party/font-awesome.min.css">
+    <!--components-->
+    <link rel="stylesheet" href="./css/components/button.css">
+    <link rel="stylesheet" href="./css/components/clock.css">
+    <link rel="stylesheet" href="./css/components/form.css">
+    <link rel="stylesheet" href="./css/components/mouse.css">
+    <link rel="stylesheet" href="./css/components/progress-bar.css">
+    <!--pages, custom style-->
+    <link rel="stylesheet" href="./css/pages/home.css">
 </head>
 
 <body>
+    <main> <!-- šio main visai galim nedėti, bet galimai taip geriau dėl SEO-->
+        <section class = "container bg-primary hero">
+            <div class = "row-short">
+                HERO CONTENT
+            </div>
+        </section>
+        <section class = "container">
+            <div class = "main-content row">
+                <div class = "left-column">
+                    LEFT COLUMN
+                </div>
+                <div class = "right-column">
+                    RIGHT COLUMN
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class = "container bg-secondary">
+        <div class = "row">SOCIALS</div>
+        <div class = "row-short">
+            FOOTER TEXT 
+        </div>
+    </footer>
 </body>
 
 </html>
 
-<!--realus serveris dev dependencies, o dev naudojamas tik k8rimo metu
-Pradžioj reikia susiplanuoti projektą:
+<!--realus serveris dev dependencies, o dev naudojamas tik kūrimo metu
+Pradžioj reikia susiplanuoti projektą
+komponentai: lairodis, forma, ir pan.
+dėl perpanaudojamumo kuriami atskiri css failai
+galim rinktis ir vieną failą visiems puslapiams, jei visi puslapiai vienodi
+../ reiškia pakilti vienu level, pridėti dar vieną ../, kad veiktų font awersome
+flex - dalina pagal teksto apimtį, o ne pagal elementų kiekį
+justify-content - nustato kaip elgiasi su nepanaudota vieta
+
+Flex https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+su height dažniausiai 100neveiks, jei tėvas neturi konkretaus auksčio
+--platus (viarable), galioja tik tam elementui, išskviesti per "var"
+box-sizing - pakeičia iš turinio pločio į elemento plotį
+* {} pažymi visus css elementus
 
 -->

@@ -1,0 +1,72 @@
+.container {
+    padding: 60px 0;
+}
+.row {
+    width: 1000px;
+    margin-left: calc(50% - 500px);
+}
+.row-short {
+    width: 600px;
+    margin-left: calc(50% - 300px);
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+.left-column {
+    width: 50%;
+}
+.right-column {
+    width: 40%;
+}
+
+/* Responsive design */
+
+@media (max-width: 1100px) {
+    .row {
+        width: 800px;
+        margin-left: calc(50% - 400px);
+    }
+}
+
+@media (max-width: 900px) {
+    .row {
+        width: 600px;
+        margin-left: calc(50% - 300px);
+    }
+    .main-content {
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        gap: 60px;
+    }
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .row,
+    .row-short {
+        width: 400px;
+        margin-left: calc(50% - 200px);
+    }
+}
+
+@media (max-width: 460px) {
+    .container {
+        padding: 0 20px; /*taip pat atrodo jei padding'as row*/
+    }
+    .row,
+    .row-short {
+        width: 100%;
+        margin-left: 0;
+    }    
+}
+
+/*Klausimas Rimantui: kam reikia visur float, jei viskas atrodo gerai ir be jo?
+nepadarius float atsiranda tarp blokų tarpai, float tai panaikina
+@media () {} -responsive design
+naudoti klases, nes net ir keičiant tag'ą, dizaino koreguoti nereikės
+su flex gap dirbti su mažesniu ir didinti tam tikrų elementų margin
+*/
