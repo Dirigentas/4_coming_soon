@@ -15,6 +15,7 @@
 }
 .main-title { /*nurodau čia, nors buvo tas pats prie layout.css, todėl, kad čia jau nebe layout savybė*/
     font-size: 80px;
+    text-transform: uppercase;
 }
 .main-description {
     font-size: 20px;
@@ -57,4 +58,37 @@ footer a {
 }
 footer a:hover {
     text-decoration: underline;
+}
+.bottom-trio {
+    display: flex;
+    gap: 0 50px;
+    justify-content: center;
+}
+.bottom-trio > span {
+    position:relative; /*kad suprastu kuriame elemente jam buti*/
+}
+.bottom-trio > span::after {
+    content: "";
+    /* display: inline-block; */
+    width: 2px;
+    height: 16px;
+    background-color: #f00;
+    position: absolute;
+    top: 50%; /*kiek atsistumia nuo virsaus, panasiai kaip margin*/
+    right: -25px; /*kiek atsistumia nuo desines, panasiai kaip margin */
+    transform: translate(50%, -50%); /*reguliuoja pacio elemento stumimasi*/
+}
+.bottom-trio > span:last-child::after {
+    display: none;
+}
+@media (max-width: 700px) {
+    .main-title {
+        font-size: 60px;
+    }
+    .bottom-trio {
+        flex-direction: column;
+    }
+    .bottom-trio > span::after {
+        display: none;
+    }
 }
