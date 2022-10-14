@@ -1,12 +1,11 @@
 .hero {
     min-height: 100vh; /*kaip %, turimo ekrano aukštis*/
     text-align: center;
-    background-image: url(../../img/coming-soon-wide.png);
-    background-position:top;
+    background-image: url(../../img/coming-soon-wide.jpg);
+    background-position: center;
     background-repeat:no-repeat;
     background-size:cover;
     background-attachment:fixed;
-
 }
 .hero > .row-short {
     display: flex;
