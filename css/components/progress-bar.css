@@ -1,4 +1,44 @@
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.progress-bar > .top {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(168, 168, 209);
+    font-size: 18px;
+    
+}
+.progress-bar > .bottom {
+    height: 6px;
+    background-color: rgb(168, 168, 209);
+    border-radius: 3px;
+}
+.progress-bar > .bottom > .progress {
+    border-radius: inherit;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 6px;
+}
 
+.progress-bar > .bottom > .progress > .bar {
+    animation: loading;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; /*padaro, kad vaizdas liktu animacijos galo vaizdas*/
+    /* animation: loading 1s forwards;  galoma ir taip*/
+    height: 100%;
+    background-color: var(--pagrindinė-spalva);
+    border-radius: inherit;
+}
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
 
 
 /* height: inherit visoms savybems galima ji naudoti */
