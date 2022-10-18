@@ -100,3 +100,9 @@ footer a:hover {
         display: none;
     }
 }
+.back-to-top {
+    background-color: var(--antrinė-spalva);
+    position: absolute;
+    top: -35px;
+    right: -20px;
+}

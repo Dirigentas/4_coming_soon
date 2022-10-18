@@ -2,6 +2,10 @@
     --pagrindinė-spalva: #03a9f4;/*galim bet kada išsikviesti*/
     --antrinė-spalva: #ea1d62;
 }
+
+html {
+    scroll-behavior: smooth
+}
 body,
 body * { /*taiko visiems body elementams*/
     margin: 0; /*nuima naršyklės taikomą margin*/
